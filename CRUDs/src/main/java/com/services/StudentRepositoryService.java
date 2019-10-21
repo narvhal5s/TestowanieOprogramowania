@@ -21,7 +21,14 @@ public class StudentRepositoryService {
             return 0;
         }
 
-        Student student = new Student(studentRepository.count() + 1, name, surname, age, email);
+        Long maxId = 0L;
+        for(Student s : studentRepository.findAll()) {
+            if(s.getId() > maxId) {
+                maxId = s.getId();
+            }
+        }
+
+        Student student = new Student(maxId + 1L, name, surname, age, email);
         studentRepository.save(student);
 
         return 1;
