@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CRUDs/CRUDs.iml" filepath="$PROJECT_DIR$/CRUDs/CRUDs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TestowanieOprogramowania.iml" filepath="$PROJECT_DIR$/.idea/TestowanieOprogramowania.iml" />
+    </modules>
+  </component>
+</project>
