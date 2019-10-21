@@ -23,10 +23,6 @@ public class UpdateTest {
     public void initialize() {
         sr.createStudent("Adam", "Nowak", 22, "email");
     }
-    @After
-    public  void finalize(){
-        sr.deleteStudent(1L);
-    }
 
     @Test
     public void aUpdateStudentTest() {
@@ -35,27 +31,27 @@ public class UpdateTest {
 
     @Test
     public void bUpdateStudentTest() {
-        Assert.assertEquals(0,sr.updateStudent(1L,"","",0, ""));
+        Assert.assertEquals(1,sr.updateStudent(2L,"","",0, ""));
     }
 
     @Test
     public void cUpdateStudentTest() {
-        Assert.assertEquals(0,sr.updateStudent(1L,null,"Kowalski",21, "gmail"));
+        Assert.assertEquals(0,sr.updateStudent(3L,null,"Kowalski",21, "gmail"));
     }
 
     @Test
     public void dUpdateStudentTest() {
-        Assert.assertEquals(0,sr.updateStudent(1L,"Wojciech",null,21 , "gmail"));
+        Assert.assertEquals(0,sr.updateStudent(4L,"Wojciech",null,21 , "gmail"));
     }
 
     @Test
     public void eUpdateStudentTest() {
-        Assert.assertEquals(0,sr.updateStudent(1L,"Wojciech","Kowalski",null , "gmail"));
+        Assert.assertEquals(0,sr.updateStudent(5L,"Wojciech","Kowalski",null , "gmail"));
     }
 
     @Test
     public void fUpdateStudentTest() {
-        Assert.assertEquals(0,sr.updateStudent(1L,"Wojciech","Kowalski",21, null));
+        Assert.assertEquals(0,sr.updateStudent(6L,"Wojciech","Kowalski",21, null));
     }
 
     @Test
@@ -65,6 +61,6 @@ public class UpdateTest {
 
     @Test
     public void hUpdateStudentTest() {
-        Assert.assertEquals(0,sr.updateStudent(2L,null,"Kowalski",21, "gmail"));
+        Assert.assertEquals(0,sr.updateStudent(8L,null,"Kowalski",21, "gmail"));
     }
 }
