@@ -58,9 +58,4 @@ public class UpdateTest {
     public void gUpdateStudentTest() {
         Assert.assertEquals(0,sr.updateStudent(33L,"Wojciech","Kowalski",21, "gmail"));
     }
-
-    @Test
-    public void hUpdateStudentTest() {
-        Assert.assertEquals(0,sr.updateStudent(8L,null,"Kowalski",21, "gmail"));
-    }
 }
