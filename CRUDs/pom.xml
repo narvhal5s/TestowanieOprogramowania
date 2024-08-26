@@ -15,7 +15,7 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <java.version>1.8</java.version>
-        <swagger.version>2.9.1</swagger.version>
+        <swagger.version>2.10.0</swagger.version>
     </properties>
 
 
